@@ -50,6 +50,13 @@
 	}
 	footer {
 		padding: 20px;
+		background-color: rgb(23,124,214);
+	}
+	.social a{
+		color: ffffcc;
+	}
+	.social a:hover {
+		color: red;
 	}
 	.intro {
 		padding: 10px;
@@ -60,11 +67,12 @@
 	.intro h2 {
 		color: white;
 	}
-	.bg-purple {
-		background-color: rgb(103,36,103);
-	}
-	.bg-grey {
-		background-color: rgb(160,160,160);
+	.bg-blue {
+		/*background-color: rgb(160,160,160);*/
+			padding: 10px;
+    		background: linear-gradient(to right, #03A9F4, #3F51B5);
+    		background-color: #2196F3;
+    		box-shadow: 0px 3px 21px 1px #00335b;
 	}
 	.text-grey {
 		color: 9A9DA0;
@@ -90,7 +98,7 @@
 	}
 	.contact {
 		background: linear-gradient(to right, #03A9F4, #3F51B5);
-    background-color: #2196F3;
+    	background-color: #2196F3;
     box-shadow: 0px 3px 21px 1px #00335b;
 	}
 
@@ -128,8 +136,8 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+			<ul class="nav navbar-nav ml-auto mt-3 mt-lg-0 justify-content-end">
 				<li class="nav-item">
 					<a class="nav-link text-grey" href="#about">ABOUT <span class="sr-only">(current)</span></a>
 				</li>
@@ -146,7 +154,7 @@
 
 
 	<!-- Begin intro -->
-	<section id="about" class="bg-grey text-center text-light">
+	<section id="about" class="bg-blue text-center text-light">
 		<div class="container intro">
 			<h2>Data Scientist </h2>
 			<p>with Practical Experience</p>
@@ -307,7 +315,7 @@
 	<!-- End challenge -->
 
 	<!-- Begin social network -->
-	<section class="bg-grey text-center">
+	<section class="bg-blue text-center">
 		<div class="social text-white" id="contact" >
 			<div class="row">
 				<div class="col-md-4">
@@ -317,21 +325,21 @@
 				</div>
 				<div class="col-md-4">
 					<h3>FIND ME ON THE WEB</h3>
-					<a href="https://yingjiehu.com" target="_blank"><i class="fas fa-2x fa-globe"></i></a>
-					<a href="https://github.com/huyingjie" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-					<a href="https://twitter.com/yingjieYJH" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
-					<a href="https://www.patreon.com/yingjiehu" target="_blank"><i class="fab fa-2x fa-patreon"></i></a>
+					<a href="https://yingjiehu.com" target="_blank"><i class="fas fa-3x fa-globe"></i></a>
+					<a href="https://github.com/huyingjie" target="_blank"><i class="fab fa-3x fa-github"></i></a>
+					<a href="https://twitter.com/yingjieYJH" target="_blank"><i class="fab fa-3x fa-twitter"></i></a>
+					<a href="https://www.patreon.com/yingjiehu" target="_blank"><i class="fab fa-3x fa-patreon"></i></a>
 				</div>
 				<div class="col-md-3">
 					<h3>SUPPORT ME</h3>
-					<i class="fa fa-fw fa-heart icon-cog"></i><a href="https://www.patreon.com/yingjiehu" target="_blank">Become a Patreon</b><i class="fa fa-fw fa-heart icon-cog"></i>
+					<i class="fa fa-fw fa-heart icon-cog"></i><a href="https://www.patreon.com/yingjiehu" target="_blank">Become a Patreon</a><i class="fa fa-fw fa-heart icon-cog"></i>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End social network -->
 	<!-- Begin footer -->
-	<footer class="bg-purple text-center text-white">
+	<footer class="text-center text-white">
 		<p>Yingjie Hu © 2017. All Rights Reversed</p>
 	</footer>
 	<!-- End footer -->
