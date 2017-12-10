@@ -1,18 +1,37 @@
 <head>
-	
+
 	<title>Personal Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="description" content="A Tribute for Zhuge Liang by Yingjie Hu">
 	<meta name="author" content="Yingjie Hu">
-	
+
 	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
+
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("scrollBtn").style.display = "block";
+	    } else {
+	        document.getElementById("scrollBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	</script>
 
 	<style>
 	body {
@@ -69,12 +88,37 @@
 	.icon-cog {
 		color: red;
 	}
+	.contact {
+		background: linear-gradient(to right, #03A9F4, #3F51B5);
+    background-color: #2196F3;
+    box-shadow: 0px 3px 21px 1px #00335b;
+	}
+
+	#scrollBtn {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 20px; /* Place the button at the bottom of the page */
+	    right: 30px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    /*background-color: ; /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 50%; /* Rounded corners */
+	}
+
+	#scrollBtn:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	}
 
 	</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+	<button class="btn btn-primary arrow up" onclick="topFunction()" id="scrollBtn" title="Top"> <i class="fas fa-arrow-circle-up fa-2x"></i></button>
 
 	<!--navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -138,9 +182,9 @@
 							Onging
 							<span class="fa-layers fa-fw fa-2x">
 								<div class="fa-2x">
-									<i class="fas fa-certificate text-danger"></i> 
+									<i class="fas fa-certificate text-danger"></i>
 									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
-									<i class="fas fa-certificate text-danger"></i> 
+									<i class="fas fa-certificate text-danger"></i>
 									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
 								</div>
 							</span>
@@ -176,7 +220,7 @@
 						<div>Front-End</div>
 						<small class="text-muted">HTML, CSS, Bootstrap</small>
 					</div>
-				</div>						  
+				</div>
 			</div>
 		</div>
 	</section>
@@ -195,7 +239,7 @@
 							Ongoing
 							<span class="fa-layers fa-fw fa-2x" sytle = "display: flex;justify-content: space-between;">
 								<div class="fa-2x">
-									<i class="fas fa-certificate text-danger"></i> 
+									<i class="fas fa-certificate text-danger"></i>
 									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
 								</div>
 							</span>
@@ -232,7 +276,7 @@
 						<div class="card-header text-center">Ongoing</div>
 						<div class="card-body">
 							<h4 class="card-title text-center">100 Days Of Reading Paper</h4>
-							<p class="card-text">Get used to seeking help 
+							<p class="card-text">Get used to seeking help
 							</p>
 							<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Reading-Paper-Round-1/" target="_blank"><i class="fas fa-info-circle"></i> Details</a></div>
 						</div>
@@ -252,7 +296,7 @@
 							<div>Data Scientist</div>
 							<small class="text-muted">Academic</small>
 						</div>
-					</div>						  
+					</div>
 
 				</div>
 			</div>
@@ -264,7 +308,7 @@
 
 	<!-- Begin social network -->
 	<section class="bg-grey text-center">
-		<div class="social text-white">
+		<div class="social text-white" id="contact" >
 			<div class="row">
 				<div class="col-md-4">
 					<h3>ABOUT PROJECTS</h3>
