@@ -1,0 +1,114 @@
+body {
+  position: relative !important;
+  height: 100% !important;
+  overflow-y: scroll !important;
+  background-color: rgb(235,235,235);
+}
+#nav-name{
+  color:#9A9DA0;
+}
+h2 {
+  padding: 20px;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  text-align: center;
+  margin: 50px 100px 50px 100px;
+  color: grey;
+}
+
+#nav-title{
+  color:#9A9DA0;
+}
+.intro {
+  padding: 10px;
+}
+.intro p {
+  font-size: 22px;
+}
+.intro h2 {
+  color: white;
+}
+.bg-blue {
+  /*background-color: rgb(160,160,160);*/
+    padding: 10px;
+    background: linear-gradient(to right, #03A9F4, #3F51B5);
+    background-color: #2196F3;
+    box-shadow: 0px 3px 21px 1px #00335b;
+}
+.nav-text {
+  color: #9A9DA0;
+}
+section {
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: white;
+  box-shadow: 0px 2px rgb(160,160,160);
+}
+.row-deck {
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+.text-white {
+  color: white;
+}
+.social{
+  padding: 80px;
+}
+.icon-cog {
+  color: red;
+  padding-right:1px;
+}
+.icon-style {
+  margin-right: 4px;
+}
+.contact {
+  background: linear-gradient(to right, #03A9F4, #3F51B5);
+    background-color: #2196F3;
+  box-shadow: 0px 3px 21px 1px #00335b;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgb(23,124,214);
+}
+.social a{
+  color: #ffffcc;
+}
+.social a:hover {
+  color: pink;
+}
+
+#scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    /*background-color: ; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+}
+
+#scrollBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+.square {
+  width: 100%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  width: 50%;
+}

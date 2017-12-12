@@ -12,120 +12,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> <!-- css graph -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="scripts/main.js"></script>
 
-
-	<script>
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	        document.getElementById("scrollBtn").style.display = "block";
-	    } else {
-	        document.getElementById("scrollBtn").style.display = "none";
-	    }
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	    document.body.scrollTop = 0;
-	    document.documentElement.scrollTop = 0;
-	}
-	</script>
-
-	<style>
-	body {
-		position: relative;
-		height: 100%;
-		overflow-y: scroll;
-		background-color: rgb(235,235,235);
-	}
-	h2 {
-		padding: 20px;
-		border-style: solid;
-		border-width: 0px 0px 5px 0px;
-		text-align: center;
-		margin: 50px 100px 50px 100px;
-		color: grey;
-	}
-	footer {
-		padding: 20px;
-		background-color: rgb(23,124,214);
-	}
-	.social a{
-		color: #ffffcc;
-	}
-	.social a:hover {
-		color: pink;
-	}
-	.intro {
-		padding: 10px;
-	}
-	.intro p {
-		font-size: 22px;
-	}
-	.intro h2 {
-		color: white;
-	}
-	.bg-blue {
-		/*background-color: rgb(160,160,160);*/
-			padding: 10px;
-    		background: linear-gradient(to right, #03A9F4, #3F51B5);
-    		background-color: #2196F3;
-    		box-shadow: 0px 3px 21px 1px #00335b;
-	}
-	.text-grey {
-		color: 9A9DA0;
-	}
-	section {
-		border-style: solid;
-		border-width: 0px 0px 0px 0px;
-		border-color: white;
-		box-shadow: 0px 2px rgb(160,160,160);
-	}
-	.row-deck {
-		padding-top: 10px;
-		padding-bottom: 10px
-	}
-	.text-white {
-		color: white;
-	}
-	.social{
-		padding: 80px;
-	}
-	.icon-cog {
-		color: red;
-		padding-right:1px;
-	}
-	.icon-style {
-		margin-right: 4px;
-	}
-	.contact {
-		background: linear-gradient(to right, #03A9F4, #3F51B5);
-    	background-color: #2196F3;
-    box-shadow: 0px 3px 21px 1px #00335b;
-	}
-
-	#scrollBtn {
-	    display: none; /* Hidden by default */
-	    position: fixed; /* Fixed/sticky position */
-	    bottom: 20px; /* Place the button at the bottom of the page */
-	    right: 30px; /* Place the button 30px from the right */
-	    z-index: 99; /* Make sure it does not overlap */
-	    border: none; /* Remove borders */
-	    outline: none; /* Remove outline */
-	    /*background-color: ; /* Set a background color */
-	    color: white; /* Text color */
-	    cursor: pointer; /* Add a mouse pointer on hover */
-	    padding: 15px; /* Some padding */
-	    border-radius: 50%; /* Rounded corners */
-	}
-
-	#scrollBtn:hover {
-	    background-color: #555; /* Add a dark-grey background on hover */
-	}
-
-	</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -135,7 +26,7 @@
 	<!--navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-		<a class="navbar-brand" style="color:#9A9DA0;" href="#">Yingjie Hu</a>
+		<a class="navbar-brand" id="nav-title" href="#">Yingjie Hu</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -173,12 +64,13 @@
 			<h2><i class="fas fa-chart-pie fa-lg icon-style"></i>PROJECTS</h2>
 			<div class="row row-deck">
 				<div class="card-deck">
+					<!-- Begin: Zhuge Liang-->
 					<div class="card border-success">
 						<div class="card-header text-center">Completed</div>
 						<img class="card-img-top" src="img/zhugeliang.jpg" alt="zhuge liang">
 						<div class="card-body">
 							<h4 class="card-title text-center">Tribute</h4>
-							<p class="card-text">A tribute page for Zhuge Liang</p>
+							<p class="card-text text-center">A tribute page for Zhuge Liang</p>
 							<div class="text-center">
 								<a class="btn btn-success" href="http://zhugeliang.yingjiehu.com/" target="_blank"><i class="fas fa-globe icon-style"></i>Website</a>
 								<a class="btn btn-success" href="https://github.com/huyingjie/tribute-zhugeliang" target="_blank"><i class="fab fa-github icon-style"></i>Codes</a>
@@ -189,162 +81,169 @@
 							<small class="text-muted">HTML, CSS, Bootstrap</small>
 						</div>
 					</div>
-					<div class="card border-primary">
+					<!-- End: Zhuge Liang-->
+
+					<!-- Begin: Project Portfolio-->
+					<div class="card border-success">
 						<div class="card-header text-center">
-							Onging
-							<span class="fa-layers fa-fw fa-2x">
-								<div class="fa-2x">
-									<i class="fas fa-certificate text-danger"></i>
-									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
-									<i class="fas fa-certificate text-danger"></i>
-									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
-								</div>
-							</span>
-						</span>
-
-					</div>
-					<img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUllgXPftJCmKiwAWB1kR0BshONExCsfaE90P3Mi75P_HGEbW5g" alt="zhuge liang" alt="zhuge liang">
-					<div class="card-body">
-						<h4 class="card-title text-center">Project Portfolio</h4>
-						<p class="card-text">A website to show personal projects</p>
-						<div class="text-center">
-							<a class="btn btn-primary" href="http://projects.yingjiehu.com" target="_blank"><i class="fas fa-globe icon-style"></i>Website</a>
-							<a class="btn btn-primary" href="https://github.com/huyingjie/projects-page" target="_blank"><i class="fab fa-github icon-style"></i>Codes</a>
+							Completed
 						</div>
-					</div>
-					<div class="card-footer">
-						<div>Front-End</div>
-						<small class="text-muted">HTML, CSS, Bootstrap</small>
-					</div>
-				</div>
-				<div class="card border-dark">
-					<div class="card-header text-center">Plan</div>
-					<img class="card-img-top" src="http://via.placeholder.com/450x270?text=coming+soon!" alt="Coming soon">
-					<div class="card-body">
-						<h4 class="card-title text-center"></h4>
-						<p class="card-text"></p>
-						<div class="text-center">
-							<a class="btn btn-dark" href="#" target="_blank"><i class="fas fa-globe"></i> Website</a>
-							<a class="btn btn-dark" href="#" target="_blank"><i class="fab fa-github"></i> Codes</a>
-						</div>
-					</div>
-					<div class="card-footer">
-						<div>Front-End</div>
-						<small class="text-muted">HTML, CSS, Bootstrap</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End projects -->
 
-	<!-- Begin challenge -->
-	<section id="challenge">
-		<div class="container col-xd-12">
-			<h2><i class="fas fa-chart-line fa-lg icon-style"></i>100-DAY CHALLENGES</h2>
-			<div class="row row-deck">
-				<div class="card-deck">
-
-					<!-- Begin: 100 Days Of Code Web Development -->
-					<div class="card border-primary">
-						<div class="card-header text-center">
-							Ongoing
-							<span class="fa-layers fa-fw fa-2x" sytle = "display: flex;justify-content: space-between;">
-								<div class="fa-2x">
-									<i class="fas fa-certificate text-danger"></i>
-									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
-								</div>
-							</span>
-						</div>
+						<img class="card-img-top" src="img/project-portfolio.png" alt="personal project">
 						<div class="card-body">
-							<h4 class="card-title text-center">100 Days Of Code</h4>
-							<p class="card-text">Learn to Code: <br>Web Development</p>
-							<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Web-Development-Round-1/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details </a></div>
+							<h4 class="card-title text-center">Project Portfolio</h4>
+							<p class="card-text text-center">A website to show personal projects</p>
+							<div class="text-center">
+								<a class="btn btn-success" href="http://projects.yingjiehu.com" target="_blank"><i class="fas fa-globe icon-style"></i>Website</a>
+								<a class="btn btn-success" href="https://github.com/huyingjie/projects-page" target="_blank"><i class="fab fa-github icon-style"></i>Codes</a>
+							</div>
 						</div>
 						<div class="card-footer">
-							<div>Web Develpment</div>
+							<div>Front-End</div>
 							<small class="text-muted">HTML, CSS, Bootstrap</small>
 						</div>
 					</div>
-					<!-- End: 100 Days Of Code Web Development -->
+					<!-- End: Project Portfolio-->
 
-					<!-- Begin: 100 Days Of Code R Data Analysis -->
+					<!-- Begin: Random Quote Machine-->
 					<div class="card border-primary">
-						<div class="card-header text-center">Soon</div>
+						<div class="card-header text-center">Ongoing
+							<span class="fa-layers fa-fw fa-2x">
+								<div class="fa-2x">
+									<i class="fas fa-certificate text-danger"></i>
+									<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3">NEW</span>
+								</div>
+							</span>
+						</div>
+						<img class="card-img-top"  alt="Coming soon" src="http://spinolasbakeshop.com/wp-content/uploads/2015/04/22520129_l.jpg">
 						<div class="card-body">
-							<h4 class="card-title text-center">100 Days Of Code</h4>
-							<p class="card-text">Become Master: <br>R, Data Analysis</p>
-							<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Code-Round-1-R-data-analysis/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details</a></div>
+							<h4 class="card-title text-center">Random Quote Machine</h4>
+							<p class="card-text text-center">Randomly present Chinese ancient sayings</p>
+							<div class="text-center">
+								<a class="btn btn-primary" href="http://randomquotemachine.yingjiehu.com/" target="_blank"><i class="fas fa-globe"></i> Website</a>
+								<a class="btn btn-primary" href="https://github.com/huyingjie/randomquotemachine" target="_blank"><i class="fab fa-github"></i> Codes</a>
+							</div>
 						</div>
 						<div class="card-footer">
-							<div>Data Scientist</div>
-							<small class="text-muted">R</small>
+							<div>Front-End</div>
+							<small class="text-muted">HTML, CSS, Bootstrap</small>
 						</div>
 					</div>
-					<!-- End: 100 Days Of Code R Data Analysis -->
-
-					<!-- Begin: 100 Days Of Reading Paper -->
-					<div class="card border-primary">
-						<div class="card-header text-center">Ongoing</div>
-						<div class="card-body">
-							<h4 class="card-title text-center">100 Days Of Reading Paper</h4>
-							<p class="card-text">Get used to seeking help
-							</p>
-							<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Reading-Paper-Round-1/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details</a></div>
-						</div>
-						<div class="card-footer">
-							<div>Data Scientist</div>
-							<small class="text-muted">Academic</small>
-						</div>
-					</div>
-
-					<div class="card border-dark">
-						<div class="card-header text-center">Future</div>
-						<div class="card-body">
-							<h4 class="card-title text-center">100 Days of Writing Paper</h4>
-							<p class="card-text"></p>
-						</div>
-						<div class="card-footer">
-							<div>Data Scientist</div>
-							<small class="text-muted">Academic</small>
-						</div>
-					</div>
-
+					<!-- End: Random Quote Machine-->
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+		<!-- End projects -->
 
+		<!-- Begin challenge -->
+		<section id="challenge">
+			<div class="container col-xd-12">
+				<h2><i class="fas fa-chart-line fa-lg icon-style"></i>100-DAY CHALLENGES</h2>
+				<div class="row row-deck">
+					<div class="card-deck">
 
-	<!-- End challenge -->
+						<!-- Begin: 100 Days Of Code Web Development -->
+						<div class="card border-primary">
+							<div class="card-header text-center">
+								Ongoing
+								<span class="fa-layers fa-fw fa-2x" sytle = "display: flex;justify-content: space-between;">
+									<div class="fa-2x">
+										<i class="fas fa-certificate text-danger"></i>
+										<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-3" style="font-weight:1200">NEW</span>
+									</div>
+								</span>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title text-center">100 Days Of Code</h4>
+								<p class="card-text text-center">Learn to Code: <br>Web Development</p>
+								<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Web-Development-Round-1/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details </a></div>
+							</div>
+							<div class="card-footer">
+								<div>Web Develpment</div>
+								<small class="text-muted">HTML, CSS, Bootstrap</small>
+							</div>
+						</div>
+						<!-- End: 100 Days Of Code Web Development -->
 
-	<!-- Begin social network -->
-	<section class="bg-blue text-center">
-		<div class="social text-white" id="contact" >
-			<div class="row">
-				<div class="col-md-4">
-					<h3>ABOUT PROJECTS</h3>
+						<!-- Begin: 100 Days Of Code R Data Analysis -->
+						<div class="card border-dark">
+							<div class="card-header text-center">Soon</div>
+							<div class="card-body">
+								<h4 class="card-title text-center">100 Days Of Code</h4>
+								<p class="card-text text-center">Become Master: <br>R, Data Analysis</p>
+								<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Code-Round-1-R-data-analysis/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details</a></div>
+							</div>
+							<div class="card-footer">
+								<div>Data Scientist</div>
+								<small class="text-muted">R</small>
+							</div>
+						</div>
+						<!-- End: 100 Days Of Code R Data Analysis -->
 
-					Made with <i class="fa fa-heart"></i> and <i class="fa fa-music"> </i>
-				</div>
-				<div class="col-md-4">
-					<h3>FIND ME ON THE WEB</h3>
-					<a href="https://yingjiehu.com" target="_blank"><i class="fas fa-3x fa-globe icon-style"></i></a>
-					<a href="https://github.com/huyingjie" target="_blank"><i class="fab fa-3x fa-github icon-style"></i></a>
-					<a href="https://twitter.com/yingjieYJH" target="_blank"><i class="fab fa-3x fa-twitter icon-style"></i></a>
-					<a href="https://www.patreon.com/yingjiehu" target="_blank"><i class="fab fa-3x fa-patreon icon-style"></i></a>
-				</div>
-				<div class="col-md-3">
-					<h3>SUPPORT ME</h3>
-					<i class="fa fa-fw fa-heart icon-cog"></i><a href="https://www.patreon.com/yingjiehu" target="_blank">Become a Patreon</a><i class="fa fa-fw fa-heart icon-cog"></i>
+						<!-- Begin: 100 Days Of Reading Paper -->
+						<div class="card border-dark">
+							<div class="card-header text-center">Soon</div>
+							<div class="card-body">
+								<h4 class="card-title text-center">100 Days Of Reading Paper</h4>
+								<p class="card-text text-center">Get used to seeking help</p>
+								<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Reading-Paper-Round-1/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details</a></div>
+							</div>
+							<div class="card-footer">
+								<div>Data Scientist</div>
+								<small class="text-muted">Academic</small>
+							</div>
+						</div>
+						<!-- End: 100 Days Of Reading Paper -->
+
+						<!-- Begin: 100 Days Of Japanese -->
+						<div class="card border-primary">
+							<div class="card-header text-center">Ongoing</div>
+							<div class="card-body">
+								<h4 class="card-title text-center">100 Days of Japanese</h4>
+								<p class="card-text text-center">Increase vocabulary</p>
+								<div class="text-center"><a class="btn btn-primary" href="http://yingjiehu.com/100-Days-Of-Japanese-Round-1/" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details</a></div>
+							</div>
+							<div class="card-footer">
+								<div>Language</div>
+								<small class="text-muted">Japanese</small>
+							</div>
+						</div>
+						<!-- End: 100 Days Of Japanese -->
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- End social network -->
-	<!-- Begin footer -->
-	<footer class="text-center text-white">
-		<p>Yingjie Hu © 2017. All Rights Reversed</p>
-	</footer>
-	<!-- End footer -->
-</body>
+		</section>
+
+
+		<!-- End challenge -->
+
+		<!-- Begin social network -->
+		<section class="bg-blue text-center">
+			<div class="social text-white" id="contact" >
+				<div class="row">
+					<div class="col-md-4">
+						<h3>ABOUT PROJECTS</h3>
+
+						Made with <i class="fa fa-heart"></i> and <i class="fa fa-music"> </i>
+					</div>
+					<div class="col-md-4">
+						<h3>FIND ME ON THE WEB</h3>
+						<a href="https://yingjiehu.com" target="_blank"><i class="fas fa-3x fa-globe icon-style"></i></a>
+						<a href="https://github.com/huyingjie" target="_blank"><i class="fab fa-3x fa-github icon-style"></i></a>
+						<a href="https://twitter.com/yingjieYJH" target="_blank"><i class="fab fa-3x fa-twitter icon-style"></i></a>
+						<a href="https://www.patreon.com/yingjiehu" target="_blank"><i class="fab fa-3x fa-patreon icon-style"></i></a>
+					</div>
+					<div class="col-md-3">
+						<h3>SUPPORT ME</h3>
+						<i class="fa fa-fw fa-heart icon-cog"></i><a href="https://www.patreon.com/yingjiehu" target="_blank">Become a Patreon</a><i class="fa fa-fw fa-heart icon-cog"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End social network -->
+		<!-- Begin footer -->
+		<footer class="text-center text-white">
+			<p>Yingjie Hu © 2017. All Rights Reversed</p>
+		</footer>
+		<!-- End footer -->
+	</body>
