@@ -1,0 +1,40 @@
+[
+  {
+    "project_name": "100 Days Of Code",
+    "sub_title": "Learn to Code: Web Development",
+    "url": "http://yingjiehu.com/100-Days-Of-Web-Development-Round-1/",
+    "area": "Web Development",
+    "sub_area": "HTML, CSS, Bootstrap, JavaScript, jQuery",
+    "status": "Onging",
+    "isNew": false
+  },
+  {
+    "project_name": "100 Days Of Code",
+    "sub_title": "Become Master: R, Data Analysis",
+    "url": "http://yingjiehu.com/100-Days-Of-Code-R-data-analysis-Round-1/",
+    "area": "Data Scientist",
+    "sub_area": "R",
+    "status": "Onging",
+    "isNew": true
+  },
+  {
+    "project_name": "100 Days Of Reading Paper",
+    "sub_title": "Get used to seeking help",
+    "url": "http://yingjiehu.com/100-Days-Of-Reading-Paper-Round-1/",
+    "area": "Data Scientist",
+    "sub_area": "Academic",
+    "status": "Onging",
+    "isNew": true
+  },
+  {
+  "project_name": "100 Days Of Japanese",
+  "sub_title": "Increase vocabulary",
+  "url": "http://yingjiehu.com/100-Days-Of-Japanese-Round-1/",
+  "area": "Language",
+  "sub_area": "Japanese",
+  "status": "Onging",
+  "isNew": true
+}
+
+
+]

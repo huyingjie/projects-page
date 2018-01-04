@@ -14,3 +14,50 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+$(document).ready(function(){
+  $.getJSON("../data/challenges.json", function(challenge){
+    //console.log(challenge);
+    var html = "";
+
+    for(var i = 0; i < challenge.length; i++){
+      if ((i+1)%4 == 1) {
+        html += '<div class="row row-deck">';
+        html += '<div class="card-deck">';
+      }
+
+      html += '<div class="card border-primary">';
+    	html +=	'  <div class="card-header text-center">' + challenge[i].status;
+      if (challenge[i].isNew){
+        html += '<span class="fa-layers fa-fw" sytle = "display: flex;justify-content: space-between;">';
+				html += '			<div class="fa-3x">';
+				html += '				<i class="fas fa-certificate text-danger"></i>';
+				html += '				<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-5" style="font-weight:1200">NEW</span>';
+				html += '			</div>';
+				html += '		</span>';
+      }
+      html += '</div>';
+    	html +=	'			<div class="card-body">';
+    	html +=	'			<h4 class="card-title text-center">' + challenge[i].project_name + '</h4>';
+    	html +=	'			<p class="card-text text-center">' + challenge[i].sub_title + '</p>';
+    	html +=	'			<div class="text-center"><a class="btn btn-primary" href="' + challenge[i].url + '" target="_blank"><i class="fas fa-info-circle icon-style"></i>Details</a></div>';
+    	html +=	'	 </div>';
+    	html +=	'	 <div class="card-footer">';
+    	html +=	'		<div>' + challenge[i].area+ '</div>';
+    	html +=	'		<small class="text-muted">' + challenge[i].sub_area + '</small>';
+    	html +=	'	 </div>'
+    	html +=	'</div>';
+
+
+      if ((i+1)%4 == 0) {
+        html += '</div></div>';
+      }
+    }
+    if (challenge.length%4!=0){
+      html += '</div></div>'
+    }
+          console.log(html);
+    $("#challenge_project_list").html(html);
+  });
+});
