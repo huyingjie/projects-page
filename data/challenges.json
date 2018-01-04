@@ -6,7 +6,8 @@
     "area": "Web Development",
     "sub_area": "HTML, CSS, Bootstrap, JavaScript, jQuery",
     "status": "Onging",
-    "isNew": false
+    "isNew": false,
+    "year": 2017
   },
   {
     "project_name": "100 Days Of Code",
@@ -15,7 +16,8 @@
     "area": "Data Scientist",
     "sub_area": "R",
     "status": "Onging",
-    "isNew": true
+    "isNew": true,
+    "year": 2017
   },
   {
     "project_name": "100 Days Of Reading Paper",
@@ -24,7 +26,8 @@
     "area": "Data Scientist",
     "sub_area": "Academic",
     "status": "Onging",
-    "isNew": true
+    "isNew": true,
+    "year": 2017
   },
   {
   "project_name": "100 Days Of Japanese",
@@ -33,7 +36,8 @@
   "area": "Language",
   "sub_area": "Japanese",
   "status": "Onging",
-  "isNew": true
+  "isNew": true,
+  "year": 2017
 }
 
 
