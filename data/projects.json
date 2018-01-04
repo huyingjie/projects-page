@@ -10,7 +10,8 @@
     "sub_area": "HTML, CSS, Bootstrap",
     "status": "Completed",
     "isNew": false,
-    "year": 2017
+    "start_year": 2017,
+    "end_year": 2017
   },
   {
     "project_name": "Project Portfolio",
@@ -23,7 +24,8 @@
     "sub_area": "HTML, CSS, Bootstrap, JavaScript, jQuery",
     "status": "Completed",
     "isNew": false,
-    "year": 2017
+    "start_year": 2017,
+    "end_year": 2017
   },
   {
     "project_name": "Random Quote Machine",
@@ -36,7 +38,8 @@
     "sub_area": "HTML, CSS, Bootstrap, JavaScript, JQuery",
     "status": "Completed",
     "isNew": false,
-    "year": 2017
+    "start_year": 2017,
+    "end_year": 2017
   },
   {
   "project_name": "the Weather Channel",
@@ -49,7 +52,8 @@
   "sub_area": "HTML, CSS, Bootstrap, JavaScript, JQuery, API",
   "status": "Completed",
   "isNew": false,
-  "year": 2017
+  "start_year": 2017,
+  "end_year": 2018
   },
   {
   "project_name": "Wikipedia Viewer",
@@ -62,7 +66,8 @@
   "sub_area": "HTML, CSS, Bootstrap, JavaScript, JQuery, API",
   "status": "Soon",
   "isNew": true,
-  "year": 2018
+  "start_year": 2017,
+  "end_year": ""
   },
   {
   "project_name": "ASAS",
@@ -75,7 +80,8 @@
   "sub_area": "HTML, CSS, Bootstrap, Gulp",
   "status": "Completed",
   "isNew": true,
-  "year": 2018
+  "start_year": 2017,
+  "end_year": 2017
   },
   {
   "project_name": "Awesome Checklist Checklist",
@@ -88,7 +94,8 @@
   "sub_area": "HTML, CSS, Bootstrap, Gulp",
   "status": "Completed",
   "isNew": true,
-  "year": 2018
+  "start_year": 2017,
+  "end_year": 2017
   },
   {
   "project_name": "Must-Watch Must-Watch",
@@ -101,6 +108,7 @@
   "sub_area": "HTML, CSS, Bootstrap, Gulp",
   "status": "Completed",
   "isNew": true,
-  "year": 2018
+  "start_year": 2017,
+  "end_year": 2017
   }
 ]

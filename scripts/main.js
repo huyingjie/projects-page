@@ -58,7 +58,6 @@ $(document).ready(function(){
     }
 
     if (projects.length%3!=0){
-      console.log(projects.length%3)
       for (var i = projects.length%3; i <3; i++){
         html += '<div class="card border-primary">';
         html += '  <div class="card-header text-center">Soon</div>';
@@ -98,7 +97,7 @@ $(document).ready(function(){
         html += '				<i class="fas fa-certificate text-danger"></i>';
         html += '				<span class="fa-layers-text fa-inverse text-warning" data-fa-transform="shrink-11.5 rotate--30 right-5" style="font-weight:1200">NEW</span>';
         html += '			</div>';
-        html += '		</span>';
+        html += '	</span>';
       }
       html += '</div>';
       html +=	'			<div class="card-body">';

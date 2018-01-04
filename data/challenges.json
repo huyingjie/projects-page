@@ -7,7 +7,8 @@
     "sub_area": "HTML, CSS, Bootstrap, JavaScript, jQuery",
     "status": "Onging",
     "isNew": false,
-    "year": 2017
+    "start_year": 2017,
+    "end_year": ""
   },
   {
     "project_name": "100 Days Of Code",
@@ -17,7 +18,8 @@
     "sub_area": "R",
     "status": "Onging",
     "isNew": true,
-    "year": 2017
+    "start_year": 2017,
+    "end_year": ""
   },
   {
     "project_name": "100 Days Of Reading Paper",
@@ -27,7 +29,8 @@
     "sub_area": "Academic",
     "status": "Onging",
     "isNew": true,
-    "year": 2017
+    "start_year": 2017,
+    "end_year": ""
   },
   {
   "project_name": "100 Days Of Japanese",
@@ -37,8 +40,18 @@
   "sub_area": "Japanese",
   "status": "Onging",
   "isNew": true,
-  "year": 2017
-}
-
-
+  "start_year": 2017,
+  "end_year": ""
+  },
+  {
+  "project_name": "100 Days Of Coloring",
+  "sub_title": "Learn color theory",
+  "url": "http://yingjiehu.com/100-Days-Of-Coloring-Round-1/",
+  "area": "Art",
+  "sub_area": "Color",
+  "status": "Onging",
+  "isNew": true,
+  "start_year": 2018,
+  "end_year": ""
+  }
 ]
