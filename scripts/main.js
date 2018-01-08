@@ -44,6 +44,7 @@ $(document).ready(function(){
       html += '      <a class="btn btn-primary project-info-icon" href="' + projects[i].url_website + '" target="_blank"><i class="fas fa-globe icon-style"></i>Website</a>';
       html += '      <a class="btn btn-primary project-info-icon" href="' + projects[i].url_github + '" target="_blank"><i class="fab fa-github icon-style"></i>Code</a>';
       if (projects[i].url_log) html += '      <a class="btn btn-primary project-info-icon" href="' + projects[i].url_log + '" target="_blank"><i class="fas fa-pencil-alt icon-style"></i>Log</a>';
+      if (projects[i].github_star) html += '<a class="github-button" href=' + projects[i].url_github + ' data-icon="octicon-star" data-show-count="true" aria-label="Star huyingjie/checklist-checklist on GitHub">Star</a>';
       html += '    </div>';
       html += '  </div>';
       html += '  <div class="card-footer">';
