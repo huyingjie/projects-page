@@ -20,6 +20,8 @@ $(document).ready(function(){
   $.getJSON("../data/projects.json", function(projects){
     var html = "";
     for(var i = 0; i < projects.length; i++){
+      var url_api_github = "https://api.github.com/repos/" + projects[i].github_owner + "/" + projects[i].github_repo;
+      var url_github = "https://github.com/" + projects[i].github_owner + "/" + projects[i].github_repo;
       if ((i+1)%3 == 1) {
         html += '<div class="row row-deck">';
         html += '<div class="card-deck">';
@@ -42,9 +44,8 @@ $(document).ready(function(){
       html += '    <p class="card-text text-center">' + projects[i].sub_title+ '</p>';
       html += '    <div class="text-center">';
       html += '      <a class="btn btn-primary project-info-icon" href="' + projects[i].url_website + '" target="_blank"><i class="fas fa-globe icon-style"></i>Website</a>';
-      html += '      <a class="btn btn-primary project-info-icon" href="' + projects[i].url_github + '" target="_blank"><i class="fab fa-github icon-style"></i>Code</a>';
+      html += '      <a class="btn btn-primary project-info-icon" href="' + url_github + '" target="_blank"><i class="fab fa-github icon-style"></i>Code</a>';
       if (projects[i].url_log) html += '      <a class="btn btn-primary project-info-icon" href="' + projects[i].url_log + '" target="_blank"><i class="fas fa-pencil-alt icon-style"></i>Log</a>';
-      if (projects[i].github_star) html += '<a class="github-button" href=' + projects[i].url_github + ' data-icon="octicon-star" data-show-count="true" aria-label="Star huyingjie/checklist-checklist on GitHub">Star</a>';
       html += '    </div>';
       html += '  </div>';
       html += '  <div class="card-footer">';
@@ -77,6 +78,7 @@ $(document).ready(function(){
     }
 
     $("#project_list").html(html);
+
   });
 
   // Challenges
