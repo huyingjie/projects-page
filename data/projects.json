@@ -124,13 +124,28 @@
     "url_img": "../img/rsnippets.png",
     "url_website": "http://rsnippets.com/",
     "url_github": "https://github.com/huyingjie/rsnippets",
-    "url_log": "",
-    "github_star": false,
+    "url_log": "http://yingjiehu.com/rsnippets/",
+    "github_star": true,
     "area": "Education",
     "sub_area": "Hugo, HTML, CSS, R",
     "status": "Update Contents",
     "isNew": true,
     "start_year": 2018,
     "end_year": ""
+  },
+  {
+    "project_name": "Gumroad Plan Calculator",
+    "sub_title": "Help choose Gumroad plan more wisely and earn more money</p>",
+    "url_img": "../img/Gumroad-Plan-Calculator.png",
+    "url_website": "http://gumroadplancalculator.yingjiehu.com/",
+    "url_github": "https://github.com/huyingjie/gumroad-plan-calculator",
+    "url_log": "http://yingjiehu.com/Gumroad-Plan-Calculator/",
+    "github_star": true,
+    "area": "Front-End",
+    "sub_area": "HTML, CSS, JavaScript",
+    "status": "Completed",
+    "isNew": true,
+    "start_year": 2018,
+    "end_year": 2018
   }
 ]

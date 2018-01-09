@@ -36,7 +36,7 @@ $(document).ready(function(){
         html += '		</span>';
       }
       html += '</div>';
-      html += '  <img class="card-img-top" src="' + projects[i].url_img + '" alt="zhuge liang">';
+      html += '  <img class="card-img-top" src="' + projects[i].url_img + '" alt="' + projects[i].project_name+ '">';
       html += '  <div class="card-body">';
       html += '    <h4 class="card-title text-center">' + projects[i].project_name + '</h4>';
       html += '    <p class="card-text text-center">' + projects[i].sub_title+ '</p>';
