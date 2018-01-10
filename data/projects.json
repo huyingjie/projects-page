@@ -157,5 +157,21 @@
     "isNew": true,
     "start_year": 2018,
     "end_year": 2018
+  },
+  {
+    "project_name": "Awesome Lifehack Calculators",
+    "sub_title": "A Curated List of Lifehack Calculators</p>",
+    "url_img": "../img/Awesome-Lifehack-Calculators.png",
+    "url_website": "http://lifehackcalculators.yingjiehu.com/",
+    "github_owner": "huyingjie",
+    "github_repo": "awesome-lifehack-calculators",
+    "url_log": "",
+    "github_star": true,
+    "area": "Front-End",
+    "sub_area": "HTML, CSS, Gulp",
+    "status": "Completed",
+    "isNew": true,
+    "start_year": 2018,
+    "end_year": 2018
   }
 ]
