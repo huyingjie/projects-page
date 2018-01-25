@@ -73,10 +73,10 @@
     "url_log": "",
     "area": "Front-End",
     "sub_area": "HTML, CSS, Bootstrap, JavaScript, JQuery, API",
-    "status": "Soon",
-    "isNew": true,
+    "status": "Completed",
+    "isNew": false,
     "start_year": 2017,
-    "end_year": ""
+    "end_year": 2018
   },
   {
     "project_name": "ASAS",
@@ -90,7 +90,7 @@
     "area": "Data Science, Front-End",
     "sub_area": "HTML, CSS, Bootstrap, Gulp",
     "status": "Completed",
-    "isNew": true,
+    "isNew": false,
     "start_year": 2017,
     "end_year": 2017
   },
@@ -106,7 +106,7 @@
     "area": "Data Science, Front-End",
     "sub_area": "HTML, CSS, Bootstrap, Gulp",
     "status": "Completed",
-    "isNew": true,
+    "isNew": false,
     "start_year": 2017,
     "end_year": 2017
   },
@@ -122,7 +122,7 @@
     "area": "Data Science, Front-End",
     "sub_area": "HTML, CSS, Bootstrap, Gulp",
     "status": "Completed",
-    "isNew": true,
+    "isNew": false,
     "start_year": 2017,
     "end_year": 2017
   },
@@ -138,7 +138,7 @@
     "area": "Education",
     "sub_area": "Hugo, HTML, CSS, R",
     "status": "Update Contents",
-    "isNew": true,
+    "isNew": false,
     "start_year": 2018,
     "end_year": ""
   },
@@ -154,7 +154,7 @@
     "area": "Front-End",
     "sub_area": "HTML, CSS, JavaScript",
     "status": "Completed",
-    "isNew": true,
+    "isNew": false,
     "start_year": 2018,
     "end_year": 2018
   },
@@ -170,6 +170,22 @@
     "area": "Front-End",
     "sub_area": "HTML, CSS, Gulp",
     "status": "Completed",
+    "isNew": false,
+    "start_year": 2018,
+    "end_year": 2018
+  },
+  {
+    "project_name": "Hexo A-RSnippet Theme",
+    "sub_title": "A Curated List of Lifehack Calculators</p>",
+    "url_img": "../img/A-RSnippet.png",
+    "url_website": "http://arsnippet.yingjiehu.com/",
+    "github_owner": "huyingjie",
+    "github_repo": "hexo-theme-A-RSnippet",
+    "url_log": "",
+    "github_star": true,
+    "area": "Web Development",
+    "sub_area": "HTML, CSS, Bootstrap, JavaScript, jQuery, ejs",
+    "status": "Maintain",
     "isNew": true,
     "start_year": 2018,
     "end_year": 2018
